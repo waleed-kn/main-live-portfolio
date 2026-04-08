@@ -1,0 +1,47 @@
+.progress-bar {
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 5px;
+  width: 0;
+}
+
+/* MERN Stack + DB */
+.mongodb-progress .progress {
+  background-color: #47A248;
+}
+
+.express-progress .progress {
+  background-color: #444444;
+}
+
+.react-progress .progress {
+  background-color: #61DAFB;
+}
+
+.node-progress .progress {
+  background-color: #68A063;
+}
+
+.postgres-progress .progress {
+  background-color: #336791;
+}
+
+/* Web */
+.web-progress .progress {
+  background-color: #2ecc71;
+}
+
+/* Optional: Backend general */
+.backend-progress .progress {
+  background-color: #8e44ad;
+}
+
+.language-info {
+  margin-left: 10px;
+  color: #fff;
+}

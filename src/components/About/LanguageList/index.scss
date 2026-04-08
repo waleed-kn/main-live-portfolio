@@ -1,0 +1,51 @@
+.language-list {
+  width: 100%;
+  max-width: 700px;
+  padding: 0 20px;
+
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 24px;
+
+      span {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: white;
+        padding-left: 4px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  // Tablet
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 16px;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  // Mobile
+  @media (max-width: 480px) {
+    padding: 0 12px;
+
+    li span {
+      font-size: 12px;
+    }
+  }
+}
