@@ -4,11 +4,11 @@ import "./index.scss";
 
 const LanguageList = () => {
   const [languages] = useState([
-    { name: "MongoDB", progress: 70, className: "mongodb-progress", months: 5 },
-    { name: "Express.js", progress: 65, className: "express-progress", months: 9 },
-    { name: "React", progress: 70, className: "react-progress", months: 9 },
-    { name: "Node.js", progress: 65, className: "node-progress", months: 9 },
-    { name: "PostgreSQL", progress: 60, className: "postgres-progress", months: 8 },
+    { name: "MongoDB", progress: 70, className: "mongodb-progress", months: 6 },
+    { name: "Express.js", progress: 65, className: "express-progress", months: 6 },
+    { name: "React", progress: 70, className: "react-progress", months: 6 },
+    { name: "Node.js", progress: 65, className: "node-progress", months: 7 },
+    { name: "PostgreSQL", progress: 60, className: "postgres-progress", months: 5 },
     { name: "HTML/CSS/JavaScript", progress: 75, className: "web-progress", months: 12 },
   ]);
 
