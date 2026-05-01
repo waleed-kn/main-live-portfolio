@@ -26,11 +26,14 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                'service_v5wr4yd',
+                'template_wbo0i9z',
                 refForm.current,
-                process.env.REACT_APP_EMAILJS_USER_ID
+                {
+                    publicKey: 'QNMnKQ8bWgjw3c35P',
+                }
             )
+
             .then(
                 () => {
                     alert("Message successfully sent! I will get back to you within 1 to 2 business days.")
@@ -59,16 +62,16 @@ const Contact = () => {
                                 <br />
                                 <br />
                                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/">
-                                    <FontAwesomeIcon icon={faLinkedin} class="icon" color="#4d4d4e" />
+                                    <FontAwesomeIcon icon={faLinkedin} className="icon" color="#4d4d4e" />
                                 </a>
                                 <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com">
-                                    <FontAwesomeIcon icon={faEnvelope} class="icon" color="#4d4d4e" />
+                                    <FontAwesomeIcon icon={faEnvelope} className="icon" color="#4d4d4e" />
                                 </a>
                             </p>
                         </div>
                         <div className="right-side">
-                            <div className="contact-form" onSubmit={sendEmail}>
-                                <form ref={refForm}>
+                            <div className="contact-form">
+                                <form ref={refForm} onSubmit={sendEmail}>
                                     <ul>
                                         <li className="half">
                                             <input type="text" name="name" placeholder="Name" required />
