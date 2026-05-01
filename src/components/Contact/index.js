@@ -46,52 +46,50 @@ const Contact = () => {
         <>
             <div className="container contact-page">
                 <div className="text-zone">
-                    <table>
-                        <tr>
-                            <td className="left-side">
-                                <h1>
-                                    <AnimatedLetters letterClass={letterClass} strArray={"Contact me".split("")} idx={15} />
-                                </h1>
-                                <p>
-                                    <br />
-                                    Thank you for your interest in getting in touch!
-                                    <br />
-                                    <br />I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
-                                    <br />
-                                    <br />
-                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/">
-                                        <FontAwesomeIcon icon={faLinkedin} class="icon" color="#4d4d4e" />
-                                    </a>
-                                    <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com">
-                                        <FontAwesomeIcon icon={faEnvelope} class="icon" color="#4d4d4e" />
-                                    </a>
-                                </p>
-                            </td>
-                            <td className="right-side">
-                                <div className="contact-form" onSubmit={sendEmail}>
-                                    <form ref={refForm}>
-                                        <ul>
-                                            <li className="half">
-                                                <input type="text" name="name" placeholder="Name" required />
-                                            </li>
-                                            <li className="half">
-                                                <input type="email" name="email" placeholder="Email" required />
-                                            </li>
-                                            <li>
-                                                <input placeholder="Subject" type="text" name="subject" required />
-                                            </li>
-                                            <li>
-                                                <textarea placeholder="Message" name="message" required></textarea>
-                                            </li>
-                                            <li>
-                                                <input type="submit" className="flat-button" value="SEND" />
-                                            </li>
-                                        </ul>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                    <div className="contact-grid">
+                        <div className="left-side">
+                            <h1>
+                                <AnimatedLetters letterClass={letterClass} strArray={"Contact me".split("")} idx={15} />
+                            </h1>
+                            <p>
+                                <br />
+                                Thank you for your interest in getting in touch!
+                                <br />
+                                <br />I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
+                                <br />
+                                <br />
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/">
+                                    <FontAwesomeIcon icon={faLinkedin} class="icon" color="#4d4d4e" />
+                                </a>
+                                <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com">
+                                    <FontAwesomeIcon icon={faEnvelope} class="icon" color="#4d4d4e" />
+                                </a>
+                            </p>
+                        </div>
+                        <div className="right-side">
+                            <div className="contact-form" onSubmit={sendEmail}>
+                                <form ref={refForm}>
+                                    <ul>
+                                        <li className="half">
+                                            <input type="text" name="name" placeholder="Name" required />
+                                        </li>
+                                        <li className="half">
+                                            <input type="email" name="email" placeholder="Email" required />
+                                        </li>
+                                        <li>
+                                            <input placeholder="Subject" type="text" name="subject" required />
+                                        </li>
+                                        <li>
+                                            <textarea placeholder="Message" name="message" required></textarea>
+                                        </li>
+                                        <li>
+                                            <input type="submit" className="flat-button" value="SEND" />
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />
