@@ -36,27 +36,8 @@
 }
 
 @media (max-width: 1000px) {
-  .job1-logo-container{
-    position: relative;
-    width: 250px;
-    height: auto;
-    top: 90px;
-    right: 0;
-    box-sizing: border-box;
-    margin: auto;
-    left: 0px;
-
-    .svg-container{
-      stroke: transparent;
-    }
-    svg {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
-    }
+  .job1-logo-container {
+    display: none;
   }
 }
 

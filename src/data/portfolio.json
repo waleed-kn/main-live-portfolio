@@ -5,6 +5,12 @@
             "description": "ReactJS, Node.js, Postgres, Express",
             "cover": "/images/ecommerce.png",
             "url": "https://ecommerce-frontend-jrqn.onrender.com/"
+        },
+        {
+            "title": "Prompt Enhancer",
+            "description": "Built with Next.js",
+            "cover": "/images/promptEnhancer.png",
+            "url": "https://ai-prompt-enhancer-1.vercel.app/"
         }
     ]
 }

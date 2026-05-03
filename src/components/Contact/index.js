@@ -33,7 +33,6 @@ const Contact = () => {
                     publicKey: 'QNMnKQ8bWgjw3c35P',
                 }
             )
-
             .then(
                 () => {
                     alert("Message successfully sent! I will get back to you within 1 to 2 business days.")
