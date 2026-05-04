@@ -8,7 +8,7 @@
         },
         {
             "title": "Prompt Enhancer",
-            "description": "Built with Next.js",
+            "description": "Built with Next.js ",
             "cover": "/images/promptEnhancer.png",
             "url": "https://ai-prompt-enhancer-1.vercel.app/"
         }
