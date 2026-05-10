@@ -4,8 +4,9 @@ import AnimatedLetters from "../AnimatedLetters"
 import { useEffect, useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -60,12 +61,22 @@ const Contact = () => {
                                 <br />I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
                                 <br />
                                 <br />
-                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/">
-                                    <FontAwesomeIcon icon={faLinkedin} className="icon" color="#4d4d4e" />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com">
-                                    <FontAwesomeIcon icon={faEnvelope} className="icon" color="#4d4d4e" />
-                                </a>
+                                <div className="contact-actions">
+                                    <Link to="/portfolio" className="portfolio-btn">
+                                        <FontAwesomeIcon icon={faBriefcase} /> View My Portfolio
+                                    </Link>
+                                    <div className="social-icons">
+                                        <a target="_blank" rel="noreferrer" href="https://github.com/waleed-kn" className="social-icon">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/" className="social-icon">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                        <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com" className="social-icon">
+                                            <FontAwesomeIcon icon={faEnvelope} />
+                                        </a>
+                                    </div>
+                                </div>
                             </p>
                         </div>
                         <div className="right-side">
