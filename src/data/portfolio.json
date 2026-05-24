@@ -11,6 +11,13 @@
             "description": "Built with Next.js & OpenApi ",
             "cover": "/images/promptEnhancer.png",
             "url": "https://ai-prompt-enhancer-1.vercel.app/"
+        },
+        {
+            "title": "Cusit PreOrderingCafe,MVP ",
+            "description": "A full smart café MVP featuring student ordering, online payments, seat reservations, real-time order tracking, staff order management, and admin dashboard functionalities.",
+ 
+            "cover": "/images/cusitpreordering.png",
+            "url": "https://cusit-smart-cafe-mvp.vercel.app/"
         }
     ]
 }
