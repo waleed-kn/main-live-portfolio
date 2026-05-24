@@ -13,6 +13,10 @@ const Contact = () => {
     const refForm = useRef()
 
     useEffect(() => {
+        emailjs.init('QNMnKQ8bWgjw3c35P');
+    }, []);
+
+    useEffect(() => {
         const timerId = setTimeout(() => {
             setLetterClass('text-animate-hover');
         }, 3000);
@@ -29,10 +33,7 @@ const Contact = () => {
             .sendForm(
                 'service_v5wr4yd',
                 'template_wbo0i9z',
-                refForm.current,
-                {
-                    publicKey: 'QNMnKQ8bWgjw3c35P',
-                }
+                refForm.current
             )
             .then(
                 () => {
@@ -62,8 +63,8 @@ const Contact = () => {
                                 <br />
                                 <br />
                                 <div className="contact-actions">
-                                    <Link to="/portfolio" className="portfolio-btn">
-                                        <FontAwesomeIcon icon={faBriefcase} /> View My Portfolio
+                                    <Link to="/projects" className="portfolio-btn">
+                                        <FontAwesomeIcon icon={faBriefcase} /> View My Projects
                                     </Link>
                                     <div className="social-icons">
                                         <a target="_blank" rel="noreferrer" href="https://github.com/waleed-kn" className="social-icon">
@@ -72,7 +73,7 @@ const Contact = () => {
                                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammadwaleed111/" className="social-icon">
                                             <FontAwesomeIcon icon={faLinkedin} />
                                         </a>
-                                        <a target="_blank" rel="noreferrer" href="mailto:waleedlinkeddin@gmail.com" className="social-icon">
+                                        <a target="_blank" rel="noreferrer" href="mailto:muhammadwaleed.se@gmail.com" className="social-icon">
                                             <FontAwesomeIcon icon={faEnvelope} />
                                         </a>
                                     </div>
@@ -90,7 +91,7 @@ const Contact = () => {
                                             <input type="email" name="email" placeholder="Email" required />
                                         </li>
                                         <li>
-                                            <input placeholder="Subject" type="text" name="subject" required />
+                                            <input placeholder="Subject" type="text" name="title" required />
                                         </li>
                                         <li>
                                             <textarea placeholder="Message" name="message" required></textarea>

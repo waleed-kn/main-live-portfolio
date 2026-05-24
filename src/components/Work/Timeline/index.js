@@ -4,7 +4,7 @@ import './index.scss';
 const Timeline = () => {
   const [events, setEvents] = useState([
     {
-      date: 'December 2024 - Present',
+      date: 'December 2024 - 2026 May',
       title: 'CGBZ Society - City University',
       description: [
         'Working as a developer at <b>City University</b>, contributing to the design and development of modern web applications using <b>React</b>, <b>JavaScript</b>, and backend technologies',
@@ -14,7 +14,7 @@ const Timeline = () => {
       expanded: false,
     },
     {
-      date: 'Present',
+      date: '2026 February - 2026 May',
       title: 'Hex Software (MERN Stack Developer Intern)',
       description: [
         'Working as a <b>MERN Stack Developer Intern</b>, building full-stack web applications using <b>MongoDB</b>, <b>Express.js</b>, <b>React</b>, and <b>Node.js</b>',
